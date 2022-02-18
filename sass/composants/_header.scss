@@ -1,0 +1,99 @@
+.site__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (min-width: $largeur__media-tablette) {
+        flex-direction: row;
+    }
+
+    &__titre{
+        color: $color__texte__defaut;
+        display: flex;
+        align-items: center;
+        h1{
+            padding: 0 clamp(0.7rem, 2vw, 7rem) 0 0;
+            font-size: clamp(1.2rem, 4vw, 4rem);
+        }
+        h2{            
+            font-size: clamp(0.7rem, 3vw, 2rem);
+        }
+    }
+}
+
+.util{
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: $largeur__media-tablette){
+        min-width: 400px;
+        align-items: flex-end;
+        width: 25%;
+        flex-direction: row;
+        .icone{
+            margin-bottom: 0px;
+            margin: 0 auto;
+        }
+
+        .recherche{
+            margin-bottom: 0;
+            width: auto;
+            margin-right: 20px;
+        }
+    }
+    @media screen and (min-width: $largeur__media-desktop){
+        flex-direction: row;
+    }
+}
+.icone{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    // .icone__lien
+    &__lien{
+        margin-right: 0.1rem;
+        svg{
+            color: $color__texte__icones;
+        }
+    }
+}
+           
+.recherche{
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+    &__input{
+        height: 23px;
+        border: none;
+        outline: none;
+        font-style: italic;
+        background-color: $color__colorbackground-recherche;
+        width: 100%;
+        border-radius: 5px;
+    }
+    &__bouton{
+        padding: 0;
+        background-color: $color__colorbackground-recherche;
+        top: 0;
+        right: 0;
+        width: 23px;
+        height: 23px;
+        outline: none;
+        border: none;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        svg{
+            color: $color__texte__recherche;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

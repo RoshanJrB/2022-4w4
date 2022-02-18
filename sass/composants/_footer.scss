@@ -1,0 +1,35 @@
+.site__footer{
+    font-size: clamp(0.5rem, 2vw, 1.2rem);
+    section{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+
+        > *{
+            padding: 1rem 0;
+            width: 33%;
+            line-height: 2;
+        }
+    }
+
+  
+
+    > p{
+        text-align: center;
+        padding: 2rem 0;
+    }
+}
+.footer__menu {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    .menu-item a{
+      display : flex;
+      align-items: center;
+      svg {
+          padding-right : 10px;
+      }
+    }  
+}    
