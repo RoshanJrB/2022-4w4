@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="site__main">
-    <!--<h1>---------------single.php-------</h1>-->
+    <h1>---------------single.php-------</h1>
     <?php if(have_posts()): ?>
         <section class="cours">
             <?php  the_post(); ?>

@@ -11,8 +11,9 @@
     padding: 0 10px;
     border-radius: 10px;
     transition: 0.5s;
-    max-width: 45%;
+    max-width: 100%;
     margin: 6px 3px;
+    box-shadow: 15px 16px 5px $color__cours__shadow;
 
     h2{
         color: $color__texte__defaut;
@@ -51,7 +52,7 @@
 
 }
 .cours__carte:hover{
-    box-shadow: 5px 10px 15px $color__cours__shadow;
+    box-shadow: none;
     border-radius: 0px;
     transition: 0.5s;
 }

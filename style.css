@@ -1,7 +1,8 @@
 /**
-Theme name: Exercice-1-Bussun-Roshan-Jr
+Theme name: Lab4-Bussun-Roshan-Jr
 Author: Roshan Jr Bussun
-Description: Exercice 1 dans le cadre du cours 4W4
+Author URI: https://github.com/RoshanJrB/2022-4w4.git
+Description: Exercice 1 dans le cadre du cours 4W4 
 Version: 1.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
@@ -29,6 +30,7 @@ ANIMATION
   color: white;
   font-size: 3rem;
   animation: anim-entete 1s forwards;
+  margin: 1%;
 }
 
 @keyframes anim-entete {
@@ -439,10 +441,11 @@ COMPOSANTS
   padding: 0 10px;
   border-radius: 10px;
   transition: 0.5s;
-  max-width: 45%;
+  max-width: 100%;
   margin: 6px 3px;
+  box-shadow: 15px 16px 5px #928875;
   border: 2px solid #f4f4ff;
-  background-color: #b7b6af;
+  background-color: #cabca1;
 }
 
 .cours__carte h2 {
@@ -475,7 +478,7 @@ COMPOSANTS
 }
 
 .cours__carte:nth-of-type(even) {
-  background-color: #cecdc5;
+  background-color: #c6caa1;
 }
 
 .single {
@@ -483,7 +486,7 @@ COMPOSANTS
 }
 
 .cours__carte:hover {
-  box-shadow: 5px 10px 15px rgba(233, 233, 233, 0.6);
+  box-shadow: none;
   border-radius: 0px;
   transition: 0.5s;
 }
@@ -597,7 +600,7 @@ COMPOSANTS
 }
 
 .icone__lien svg {
-  color: #a7adb5;
+  color: #dadfd2;
 }
 
 .recherche {
@@ -611,14 +614,14 @@ COMPOSANTS
   border: none;
   outline: none;
   font-style: italic;
-  background-color: #5f6a75;
+  background-color: #74755f;
   width: 100%;
   border-radius: 5px;
 }
 
 .recherche__bouton {
   padding: 0;
-  background-color: #5f6a75;
+  background-color: #74755f;
   top: 0;
   right: 0;
   width: 23px;
@@ -660,7 +663,7 @@ COMPOSANTS
 }
 
 #burger svg {
-  color: #a7adb5;
+  color: #dadfd2;
 }
 
 #chk-burger:checked ~ .menu-principal-container {
@@ -741,21 +744,21 @@ LAYOUT
 /* fin @media tablette */
 .site__header {
   grid-area: header;
-  background-color: #202931;
+  background-color: #b69f9a;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #151515;
+  background-color: #b6a09a;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #313530;
+  background-color: #b69f9a;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #404b57;
+  background-color: #b6b29a;
 }
 /*# sourceMappingURL=style.css.map */
