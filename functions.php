@@ -31,6 +31,8 @@
         return($monObjet);
     }
 
-    add_filter("wp_nav_menu_objects", "cidw_4w4_filtre_menu_item"); 
+    add_filter("wp_nav_menu_objects", "cidw_4w4_filtre_menu_item");
+    
+    add_theme_support( 'post-thumbnails');
 
 ?>
