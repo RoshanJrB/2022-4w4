@@ -7,11 +7,9 @@
         <div class="animation__bloc">4</div>
         <div class="animation__bloc">5</div>
     </section>
-
-    <h1>----------front-page.php--------------</h1>
     <?php if(have_posts()): while(have_posts()) : the_post(); ?>
-        <?php the_title(); ?>
-        <?php the_content(); ?>
+        <h1><?php the_title(); ?></h1>
+        <p><?php the_content(); ?></p>
         <?php endwhile; ?>
     <?php endif; ?>
 </main>
