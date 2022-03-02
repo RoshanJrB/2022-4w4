@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="site__main">
-    <h1>category-cours.php</h1>
+    <h1>Liste des cours en TIM</h1>
     <?php if(have_posts()): ?>
         <section class="cours">
             <?php while(have_posts()): the_post(); ?>

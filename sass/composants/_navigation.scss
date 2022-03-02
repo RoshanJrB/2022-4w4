@@ -63,11 +63,17 @@
 .menu-item{
     margin: 0;
     a{
+        transition: 0.5s;
         margin: 0;
         display: block;
         padding: 3px;
         text-decoration: none;
+        color: $color__link;
+        &:visited{
+            color: $color__link-visited;
+        }
         &:hover{
+            color: $color__link-hover;
             background-color: $color__background-link-hover;
         }
     }

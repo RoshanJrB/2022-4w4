@@ -375,11 +375,11 @@ a {
 }
 
 a:visited {
-  color: #5b5bb9;
+  color: none;
 }
 
 a:hover, a:focus, a:active {
-  color: #00a;
+  color: red;
 }
 
 a:focus {
@@ -542,6 +542,16 @@ COMPOSANTS
   }
 }
 
+.site__header a {
+  transition: 1s;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.site__header a:hover {
+  color: red;
+}
+
 .site__header__titre {
   color: #f7f7f7;
   display: flex;
@@ -641,6 +651,10 @@ COMPOSANTS
   height: auto;
 }
 
+.site__barre svg {
+  padding-right: 5px;
+}
+
 #chk-burger {
   display: none;
 }
@@ -711,14 +725,132 @@ COMPOSANTS
 }
 
 .menu-item a {
+  transition: 0.5s;
   margin: 0;
   display: block;
   padding: 3px;
   text-decoration: none;
+  color: #00f;
+}
+
+.menu-item a:visited {
+  color: none;
 }
 
 .menu-item a:hover {
+  color: red;
   background-color: #aaa;
+}
+
+.site__main {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.front_page {
+  margin: 0;
+}
+
+.front_page h2 {
+  color: blue;
+}
+
+.front_page__titre {
+  color: #f7f7f7;
+}
+
+.front_page p {
+  margin: 0;
+  font-size: 2rem;
+  background-color: #cabca1;
+}
+
+@media screen and (min-width: 768px) {
+  .front_page {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .front_page {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.cours {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.cours__carte__single {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 0 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  max-width: 100%;
+  margin: 6px 3px;
+  box-shadow: 15px 16px 5px #928875;
+  border: 2px solid #f4f4ff;
+  background-color: #cabca1;
+}
+
+.cours__carte__single h2 {
+  color: #f7f7f7;
+  text-align: left;
+  font-size: clamp(0.5rem, 3vw, 1.4rem);
+}
+
+.cours__carte__single a {
+  text-decoration: none;
+  font-size: clamp(0.5rem, 3vw, 4rem);
+}
+
+.cours__carte__single p {
+  margin: 5px 0;
+  font-size: clamp(2rem, 2vw, 3rem);
+}
+
+.cours__carte__single p:nth-of-type(1), .cours__carte__single .cours__carte__single p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .cours__carte__single {
+    margin: 10px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cours__carte__single {
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.cours__carte__single:nth-of-type(even) {
+  background-color: #c6caa1;
+}
+
+.single {
+  margin: 0;
+}
+
+.cours__carte__single:hover {
+  box-shadow: none;
+  border-radius: 0px;
+  transition: 0.5s;
 }
 
 /* ---------------------------------------------------------

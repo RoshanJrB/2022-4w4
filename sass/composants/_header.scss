@@ -7,7 +7,16 @@
     @media screen and (min-width: $largeur__media-tablette) {
         flex-direction: row;
     }
+    
 
+    a{
+        transition: 1s;
+        text-decoration: none;
+        color: $color__texte__defaut;
+        &:hover{
+            color: $color__link-hover;
+        }
+    }
     &__titre{
         color: $color__texte__defaut;
         display: flex;
@@ -95,5 +104,10 @@
             width: 100%;
             height: auto;
         }
+    }
+}
+.site__barre {
+    svg{
+        padding-right: 5px;
     }
 }

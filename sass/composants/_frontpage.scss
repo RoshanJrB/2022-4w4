@@ -1,0 +1,29 @@
+.site__main{
+    margin:0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+.front_page{
+    margin: 0;
+    h2{
+        color: blue;
+    }
+    &__titre{
+        color: $color__texte__defaut;
+    }
+    p{
+        margin: 0;
+        font-size: 2rem;
+        background-color: $color__cours__background;
+    }
+    @media screen and (min-width: $largeur__media-tablette){
+        margin: 0;
+        max-width: 100%;
+    }
+    @media screen and (min-width: $largeur__media-desktop){
+        margin: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

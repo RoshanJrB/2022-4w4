@@ -10,9 +10,10 @@
 <body <?php body_class('site'); ?>>
 <header class="site__header">
     <section class="site__header__titre">
-        <h1 class="header__titre">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-            <?php echo get_bloginfo(); ?></h1>
+        <h1 class="header__titre">
+            <?php echo get_bloginfo(); ?>
+        </h1>
         </a>
         <h2 class="header__description"> <?php echo get_bloginfo('description'); ?></h2>
     </section>
@@ -43,5 +44,8 @@
     <label for="chk-burger" id="burger">
         <svg width="35px" height="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
     </label>
-    <?php wp_nav_menu(array('menu' => 'principal')); ?>
+    <?php 
+    $icone = '<svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#ddd"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>';
+    wp_nav_menu(array('menu' => 'principal',
+                    "link_before"=>$icone)); ?>
 </section>
