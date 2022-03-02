@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <main class="site__main">
     <?php if(have_posts()): the_post();?>
-        <section class="cours">
+        <section class="cours__single">
         <article class="cours__carte__single">
                 <?php
                     $titre = get_the_title();
