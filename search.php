@@ -1,45 +1,29 @@
 <?php
 /**
- * Affiche les résultats des recherches
+ * Le modèle résultats de recherche search.php
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ * Affiche les résultats de reherche
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package cidw-4w4
  */
-
-get_header();
 ?>
+<?php get_header() ?>
 <main class="site__main">
     <section class="site__main__recherche">
-        <h1>
-            Résultat de la recherche
-        </h1>
-    </section>
-    <section class="cours">
-<?php if(have_posts()): while(have_posts()) : the_post(); ?>
-<article class="cours__carte">
-                <?php
-                    $titre = get_the_title();
-                    $titreCourt = substr(get_the_title(), 8);
-                    $titreCourt = substr($titreCourt, 0, strrpos($titreCourt, '('));
+        <h1>Résultats de la recherche</h1>
+        <?php if(have_posts()): while(have_posts()): the_post(); ?>
+        <a href="<?php echo get_permalink(); ?>">
+            <h2><?php the_title(); ?></h2>
+        </a>
+        <p> <?php echo wp_trim_words(get_the_content(),20) ?></p>
 
-                    $posDebutHeures = strrpos($titre, '(') + 1;
-                    $posFinHeures = strrpos($titre, ')');
-                    $nbHeures = substr($titre, $posDebutHeures, $posFinHeures - $posDebutHeures);
-                ?>
-                <h2 class="carte__titre">
-                    <a href="<?php echo get_permalink(); ?>">
-                    <?= $titreCourt; ?>
-                    </a>
-                </h2>
-                <p class="carte__code"><?= substr(get_the_title(), 0, 7) ?></p>
-                <p><?= $nbHeures; ?></p>
-                <p class="carte__description"><?= get_the_excerpt() ?></p>
-            </article>
-        <?php endwhile; ?>
-        </section>
+        <hr>
+        <?php endwhile ?>
         <?php else : ?>
-            <h1>Aucun Résultat</h1>
-    <?php endif; ?>
+        <h2>Aucun résultats pour la recherche</h2>
+        <?php endif ?>
+    </section>
 </main>
-<?php get_footer(); ?>
+<?php get_footer() ?>

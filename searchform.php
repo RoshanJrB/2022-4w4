@@ -1,5 +1,11 @@
-<div class="util_lien"></div>
-        <form class="recherche" action="<?php echo get_home_url('/'); ?>">
-            <input type="text" placeholder="Recherche" class="recherche__input" name="s" value="<?php echo get_search_query(); ?>">
-            <button class="recherche__bouton"><svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#000"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></button>
-        </form>
+<form class="recherche" action="<?php echo get_home_url('/'); ?>">
+    <input type="text" class="recherche__input" name="s" value="<?php echo get_search_query(); ?>">
+    <button class="recherche__bouton">
+        <svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+            color="#000">
+            <path fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"></path>
+        </svg>
+    </button>
+</form>

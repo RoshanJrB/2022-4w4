@@ -1,27 +1,45 @@
-$color__background-body: rgb(227, 233, 236);
-$color__colorbackground-header: rgb(182, 159, 154);
-$color__colorbackground-barre: rgb(182, 178, 154);
-$color__colorbackground-main: rgb(182, 159, 154);
-$color__colorbackground-footer: rgb(182, 160, 154);
-$color__colorbackground-recherche: rgb(116, 117, 95);
+/* ---------------- BACKGROUND */
+$color__background-body : hsl(224, 44%, 90%);
+$color__background-body-clip : hsl(204, 78%, 65%);
+$color__background-main : hsl(204, 49%, 89%);
+$color__background-cours : hsl(209, 100%, 91%);
+$color__background-header : hsl(207, 66%, 66%);
+$color__background-barre : hsl(200, 78%, 9%);
+$color__background-footer : hsl(225, 78%, 13%);
+$color__background-link : hsl(227, 22%, 84%);
+$color__background-link-hover : hsl(236, 64%, 44%);
 
-$color__texte__recherche: rgb(202, 209, 212);
-$color__texte__icones: rgb(218, 223, 210);
-$color__texte__defaut: rgb(247, 247, 247);
+/* ---------------- LIENS */
+$color__link : hsl(18, 27%, 38%);
+$color__link-hover : hsl(0, 0%, 100%);
+$color__link-visited : hsl(19, 29%, 28%);
+/* ---------------- LIENS FOOTER */
+$color__link__footer : hsl(0, 91%, 50%);
+$color__link__footer-hover : hsl(123, 80%, 49%);
+$color__link__footer-visited : hsl(231, 84%, 50%);
+/* ---------------- LIENS HEADER titre principal du site */
+$color__link__header : hsl(0, 82%, 68%);
+$color__link__header-hover : hsl(123, 63%, 72%);
+$color__link__header-visited : hsl(261, 62%, 56%);
+/* ----------------------- couleur menu footer */
+$color__link__footer__menu : #fff;
+$color__link__footer__menu-visited : #ddd;
+$color__link__footer__menu-hover: #f00;
+$background__link__footer__menu : #444;
+$background__link__footer__menu-visited : #555; 
+$background__link__footer__menu-hover: #222;
+/* ----------------------- couleur menu principal */
+$color__link__menu__principal : #0f0;
+$color__link__menu__principal-visited : #0d0; 
+$color__link__menu__principal-hover : #00f;
+$background__link__menu__principal : #ddd;
+$background__link__menu__principal-visited: #ccc;
+$background__link__menu__principal-hover : #ddd;
 
-$color__cours__bordure: rgb(244, 244, 255);
-$color__cours__background: #cabca1;
-$color__cours__background-pair: #c6caa1;
-$color__cours__shadow: #928875;
 
-$color__carte__bordure: #73726e;
 
-$color__link: #00f;
-$color__link-visited: none;
-$color__link-hover: red;
-
-$color__link__footer: rgb(216, 219, 37);
-$color__link__footer-visited: rgb(223, 58, 8);
-$color__link__footer-hover: rgb(20, 170, 0);
-
-$color__background-link-hover: #aaa;
+/* ---------------- FONT */
+$color__font-header : rgb(214, 216, 228);
+$color__font-main :rgb(219, 223, 243);
+$color__font-barre : rgb(208, 216, 240);
+$color__font-footer : rgb(226, 231, 248);
