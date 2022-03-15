@@ -30,12 +30,15 @@ function cidw_4w4_filtre_choix_menu($obj_menu){
 }
 add_filter("wp_nav_menu_objects","cidw_4w4_filtre_choix_menu");
 /* --------------------------------------------------------------------------  add_theme_support */
-
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'custom-logo', array(
-    'height' => 200,
-    'width'  => 200,
+function cidw_4w4_add_theme_support()
+{
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'custom-logo', array(
+        'height' => 200,
+        'width'  => 200,
 ) );
+}
+add_action( 'after_setup_theme', 'cidw_4w4_add_theme_support' );
 
 /* ----------------------------------------------------------------------  Enregistrement des sidebars */
 add_action( 'widgets_init', 'my_register_sidebars' );

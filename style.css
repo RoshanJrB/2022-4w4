@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: TP1 Bussun Roshan Jr
-Author: Bussun Roshan Jr
-Author URI: https://github.com/RoshanJrB/2022-4w4.git
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/RoshanJrB/2022-4w4.git
+theme name: groupe__3 eddy martin
+Author: Eddy martin
+Author URI: https://github.com/eddytuto
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -20,6 +20,8 @@ VARIABLES
 /* ----------------------- couleur menu footer */
 /* ----------------------- couleur menu principal */
 /* ---------------- FONT */
+/* ------------------------- bibliothèque de police de caractère google -------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Oxanium:wght@200&display=swap");
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -475,7 +477,7 @@ COMPOSANTES
   font-size: 2rem;
   color: #dbdff3;
   margin: 10px 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Oxanium", cursive;
 }
 
 .formation__liste {
@@ -524,26 +526,53 @@ COMPOSANTES
 
 .site__header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #6faee2;
   color: #d6d8e4;
   padding-left: 10px;
 }
 
+@media screen and (min-width: 800px) {
+  .site__header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.site__header .custom-logo-link, .site__header .header__titre, .site__header .header__description {
+  padding: 10px;
+}
+
 .site__header .header__titre {
-  font-size: 3em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: clamp(3rem, 3vw, 8rem);
+  font-family: "Oxanium", cursive;
 }
 
 .site__header .header__description {
-  font-size: 1.5rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: clamp(5rem, 2vw, 5rem);
+  font-family: "Hubballi", cursive;
 }
 
 .util {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  align-items: center;
+  padding: 15px;
+  width: 90%;
+  justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  .util {
+    margin-left: auto;
+    width: 15%;
+  }
 }
 
 .util__lien {
@@ -566,6 +595,7 @@ COMPOSANTES
 
 .menu-principal-container {
   display: none;
+  padding: 30px 0 0 0;
 }
 
 #chk-burger:checked ~ .menu-principal-container {
@@ -590,16 +620,22 @@ COMPOSANTES
 }
 
 @media screen and (min-width: 800px) {
-  #burger {
+  .site #burger {
     display: none;
   }
-  .menu-principal-container {
+  .site .menu-principal-container {
     display: block;
+  }
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
   }
 }
 
 .site__footer {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Oxanium", cursive;
   background-color: #07143b;
   color: #e2e7f8;
   padding: 15px;
@@ -649,13 +685,19 @@ COMPOSANTES
   color: #19e123;
 }
 
-.cours__contenu {
+.cours {
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .recherche {
   position: relative;
   display: flex;
+  width: 100%;
+  margin: 10px 0 10px 0;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -673,12 +715,14 @@ COMPOSANTES
 }
 
 .recherche__bouton {
+  height: 100%;
   position: absolute;
   right: 0;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 
 /* ---------------------------------------------------------
@@ -719,7 +763,7 @@ theme name: Lab 2 Lemieux Florence
 */
 .site {
   background-color: rgba(218, 224, 241, 0.5);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Hubballi", cursive;
 }
 
 .home::after {
@@ -767,6 +811,12 @@ theme name: Lab 2 Lemieux Florence
   .site {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .home {
+    display: grid;
+    gap: 0;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
   }
 }
 /*# sourceMappingURL=style.css.map */

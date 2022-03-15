@@ -1,7 +1,8 @@
 .cours {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 
-    &__titre{}
-    &__contenu{
-        display: flex;
-    }
 }

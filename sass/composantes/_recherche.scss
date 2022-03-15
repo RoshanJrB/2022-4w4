@@ -1,6 +1,8 @@
 .recherche{
     position:relative;
     display : flex;
+    width: 100%;
+    margin: 10px 0 10px 0;
     background-color: rgba(#000, .1);
     &__input{
         flex:1;
@@ -14,12 +16,14 @@
         }
     }
     &__bouton{
+        height: 100%;
         position : absolute;
         right : 0;
         top : 0;
         display : flex;
         align-items: center;
         justify-content: center;
+        border: none;
         svg{}
     }
 }

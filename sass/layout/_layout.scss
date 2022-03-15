@@ -66,6 +66,18 @@ theme name: Lab 2 Lemieux Florence
             "sidebar main"
             "footer footer";
     }
+
+    .home {
+        display: grid;
+        gap : 0;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "sidebar"
+            "header"
+            "main"
+            "footer";
+    }
+
 }
 
 
