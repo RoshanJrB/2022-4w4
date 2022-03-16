@@ -1,20 +1,92 @@
-.animation{
+/*.animation{
     display : flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
 
-    &__bloc{
+    &__div__bloc{
+        margin: 1%;
         display : flex;
         justify-content: center;
         align-items: center;
-        width : 100px;
+        width : 99%;
         height : 100px;
-        border-radius: 50%;
         background-color: rgb(17, 97, 247);
         color : #fff;
-        font-size: 3rem;
+        font-size: 200%;
         animation : anim-entete 1s forwards;
     }
+
+}*/
+
+.animation { 
+    &__nav{ // .footer__menu__nav
+      width:100%;
+  
+      &__ul{ // .footer__menu__nav__ul
+          display : flex;
+          list-style-type: none;
+          
+          justify-content: space-around;
+          .menu-item { // .site__footer__menu__ul .menu-item
+              
+              
+            a{ // .site__footer__menu__ul .menu-item a
+              background-color: #888888;
+              display : flex;
+              align-items: center;
+              padding : 3px;
+                svg { // .site__footer__menu__ul .menu-item a svg
+                  color: $color__link__footer;
+                }
+           
+              &:hover {
+                svg { // .site__footer__menu__ul .menu-item a svg
+                  color: $color__link__footer-hover;
+                }
+              }
+            }
+          }    
+       }
+    }
+  }
+
+@media screen and (min-width: $largeur__media--tablette) {
+    .animation{
+        flex-direction: row;
+
+        &__div__bloc{
+            text-align: center;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 140%;
+            width : 20%;
+            height : 100px;
+            transition: 500ms;
+        }
+        &__div__bloc:hover{
+            transition: 500ms;
+            box-shadow: 5px 10px 8px #888888;
+        }
+    }
 }
+
+@media screen and (min-width: $largeur__media--desktop) {
+    .animation{
+        flex-direction: row;
+
+        &__div__bloc{
+            text-align: center;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 175%;
+            width : 20%;
+            height : 100px;
+        }
+    }
+}
+    
 
 @keyframes anim-entete {
     0% {

@@ -2,11 +2,12 @@
 <main class="site__main">
 
 <section class="animation">
-    <div class="animation__bloc">1</div>
-    <div class="animation__bloc">2</div>
-    <div class="animation__bloc">3</div>
-    <div class="animation__bloc">4</div>
-    <div class="animation__bloc">5</div>
+    <?php
+        wp_nav_menu(array(
+            "menu"=>"simple",
+            "container"=>"nav",
+            "container_class"=>"animation__nav",
+            "menu_class"=>"animation__nav__ul"));?> 
 </section>
 
    <?php if (have_posts()): the_post(); ?>

@@ -741,22 +741,83 @@ COMPOSANTES
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
-.animation {
-  display: flex;
-  justify-content: space-between;
+/*.animation{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__div__bloc{
+        margin: 1%;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        width : 99%;
+        height : 100px;
+        background-color: rgb(17, 97, 247);
+        color : #fff;
+        font-size: 200%;
+        animation : anim-entete 1s forwards;
+    }
+
+}*/
+.animation__nav {
+  width: 100%;
 }
 
-.animation__bloc {
+.animation__nav__ul {
   display: flex;
-  justify-content: center;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.animation__nav__ul .menu-item a {
+  background-color: #888888;
+  display: flex;
   align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #1161f7;
-  color: #fff;
-  font-size: 3rem;
-  animation: anim-entete 1s forwards;
+  padding: 3px;
+}
+
+.animation__nav__ul .menu-item a svg {
+  color: #f40b0b;
+}
+
+.animation__nav__ul .menu-item a:hover svg {
+  color: #19e123;
+}
+
+@media screen and (min-width: 800px) {
+  .animation {
+    flex-direction: row;
+  }
+  .animation__div__bloc {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140%;
+    width: 20%;
+    height: 100px;
+    transition: 500ms;
+  }
+  .animation__div__bloc:hover {
+    transition: 500ms;
+    box-shadow: 5px 10px 8px #888888;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .animation {
+    flex-direction: row;
+  }
+  .animation__div__bloc {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 175%;
+    width: 20%;
+    height: 100px;
+  }
 }
 
 @keyframes anim-entete {
@@ -771,9 +832,6 @@ ANIMATION
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
-/*
-theme name: Lab 2 Lemieux Florence
-*/
 .site {
   background-color: rgba(218, 224, 241, 0.5);
   font-family: "Hubballi", cursive;
