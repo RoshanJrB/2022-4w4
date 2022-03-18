@@ -15,7 +15,7 @@
     right:0;
     background-color: $color__background-body-clip;
    
-    z-index: -1;
+    //z-index: -1;
     clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
 }
 
@@ -28,8 +28,10 @@
 }
 
 .site__barre{
+    width: 100%;
+    position: absolute;
     grid-area: sidebar;
-    background-color: $color__background-barre;
+    background-color: transparent;
 }
 
 .site__main{
@@ -44,7 +46,7 @@
 
 .site {
 	display: grid;
-    gap : 10px;
+    //gap : 10px;
 	grid-template-columns: auto;
 	grid-template-areas:
 		"sidebar"

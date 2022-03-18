@@ -6,14 +6,12 @@
     color: $color__font-header;
     padding-left: 10px;
 
-    @media screen and (min-width: $largeur__media--tablette){
-      flex-direction: row;
-      align-items: center;
-    }
-
     &__titre{
       display: flex;
+      flex-direction: column;
       justify-content: flex-start;
+      align-content: center;
+      text-align: center;
     }
 
     .custom-logo-link, .header__titre, .header__description {
@@ -21,7 +19,7 @@
     }
 
     .header__titre{
-      font-size: clamp(3rem, 3vw, 8rem);
+      font-size: 4vw;
       font-family: $font__titre;
     }
     .header__description {
@@ -36,15 +34,13 @@
     align-items:center;
     padding: 15px;
     width: 90%;
-    justify-content: center;
-
-    @media screen and (min-width: $largeur__media--tablette){
-      margin-left : auto;
-      width: 15%;
-    }
+    justify-content: space-between;
 
     &__lien{
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 30%;
     }
 
   }

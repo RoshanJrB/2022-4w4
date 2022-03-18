@@ -533,16 +533,12 @@ COMPOSANTES
   padding-left: 10px;
 }
 
-@media screen and (min-width: 800px) {
-  .site__header {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
 .site__header__titre {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  align-content: center;
+  text-align: center;
 }
 
 .site__header .custom-logo-link, .site__header .header__titre, .site__header .header__description {
@@ -550,7 +546,7 @@ COMPOSANTES
 }
 
 .site__header .header__titre {
-  font-size: clamp(3rem, 3vw, 8rem);
+  font-size: 4vw;
   font-family: "Oxanium", cursive;
 }
 
@@ -565,21 +561,18 @@ COMPOSANTES
   align-items: center;
   padding: 15px;
   width: 90%;
-  justify-content: center;
-}
-
-@media screen and (min-width: 800px) {
-  .util {
-    margin-left: auto;
-    width: 15%;
-  }
+  justify-content: space-between;
 }
 
 .util__lien {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
 }
 
 #burger {
+  z-index: 50;
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
@@ -593,13 +586,20 @@ COMPOSANTES
   transform: rotate(90deg);
 }
 
+.site__barre {
+  transform: translateY(-100%);
+}
+
 .menu-principal-container {
-  display: none;
+  background-color: #051d29;
+  transform: translateY(-100%);
+  transition: 500ms;
   padding: 30px 0 0 0;
 }
 
-#chk-burger:checked ~ .menu-principal-container {
-  display: block;
+#chk-burger:checked ~ .menu-principal-container, .site__barre {
+  transform: translateY(0%);
+  transition: 500ms;
 }
 
 .menu {
@@ -840,7 +840,6 @@ LAYOUT
   left: 0;
   right: 0;
   background-color: #60b4eb;
-  z-index: -1;
   clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
 }
 
@@ -850,8 +849,10 @@ LAYOUT
 }
 
 .site__barre {
+  width: 100%;
+  position: absolute;
   grid-area: sidebar;
-  background-color: #051d29;
+  background-color: transparent;
 }
 
 .site__main {
@@ -866,7 +867,6 @@ LAYOUT
 
 .site {
   display: grid;
-  gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
