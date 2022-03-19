@@ -1,6 +1,10 @@
+.cours__titre{
+    font-size: 2rem;
+}
 @media screen and (min-width: $largeur__media__desktop) {
     .site__main{
-        position: relative;
+        //position: relative;
+        height: auto;
     }
     .cours {
         height: 100%;
@@ -11,12 +15,25 @@
     
     }
     
+    .cours__contenu{
+        display: flex;
+    }
+
+    .cours__titre{
+        font-size: 2rem;
+    }
+
+    .cours__contenu p {
+        font-size: 1vw;
+    }
+
     .cours__contenu img {
+        //align-self: flex-end;
         top: 0;
         right: 0;
         margin: 10px;
-        position: absolute;
-        width: 20%;
+        //position: absolute;
+        width: 30%;
         height: auto;
     }
         
