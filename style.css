@@ -706,7 +706,7 @@ COMPOSANTES
 }*/
 .site__footer {
   font-family: "Oxanium", cursive;
-  background-color: #07143b;
+  background-color: #56699f;
   color: #e2e7f8;
   padding: 15px;
 }
@@ -881,7 +881,7 @@ ANIMATION
 }
 
 .animation__nav__ul .menu-item {
-  background-color: #1161f7;
+  background-color: #456194;
   height: 100px;
   margin: 1%;
   padding: 0;
@@ -925,7 +925,7 @@ ANIMATION
     justify-content: space-around;
   }
   .animation__nav__ul .menu-item {
-    background-color: #1161f7;
+    background-color: #456194;
     height: 100px;
     margin: 1%;
     padding: 0;
@@ -966,7 +966,7 @@ ANIMATION
     justify-content: space-around;
   }
   .animation__nav__ul .menu-item {
-    background-color: #1161f7;
+    background-color: #456194;
     width: 20%;
     height: 200px;
     display: flex;
@@ -1013,7 +1013,7 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: rgba(218, 224, 241, 0.5);
+  background-color: rgba(86, 105, 159, 0.5);
   font-family: "Hubballi", cursive;
   width: 100%;
 }
@@ -1027,7 +1027,7 @@ LAYOUT
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #60b4eb;
+  background-color: #5359ac;
   z-index: -1;
   clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
 }
@@ -1050,7 +1050,7 @@ LAYOUT
 
 .site__footer {
   grid-area: footer;
-  background-color: #07143b;
+  background-color: #56699f;
 }
 
 .site {
