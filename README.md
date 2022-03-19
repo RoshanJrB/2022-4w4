@@ -3,9 +3,14 @@
 ### TP1 en 4W4
 
 Développement des modules:
- - search.php
- - searchform.php
-Développement d'un nouveau mixin link_menu
+ - responsive affichage tablette mobile et desktop
+ - police de caractère google
+ - animation de la navigation du menu burger et affichage des cours
+ - ajout d'une deuxième navigation permettant d'accèder à la page des cours, page de confidentialité, page web du collège de maisonneuve et page affichant un article lambda
+ - modification des couleurs de la page web
+ - ajout de widget dans les colonnes du footer
+ - correction du single pour améliorer le flexbox et l'affichage en responsive
+
 
  Début d'une animation
 
