@@ -594,12 +594,15 @@ COMPOSANTES
   background-color: #051d29;
   transform: translateY(-100%);
   transition: 500ms;
-  padding: 30px 0 0 0;
+  padding: 35px 0 0 0;
+  width: 100%;
+  position: absolute;
 }
 
 #chk-burger:checked ~ .menu-principal-container, .site__barre {
   transform: translateY(0%);
   transition: 500ms;
+  width: 100%;
 }
 
 .menu {
@@ -828,18 +831,20 @@ LAYOUT
 .site {
   background-color: rgba(218, 224, 241, 0.5);
   font-family: "Hubballi", cursive;
+  width: 100%;
 }
 
 .home::after {
   content: "";
   position: absolute;
-  width: 100%;
+  min-width: 500px;
   height: 100%;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #60b4eb;
+  z-index: -1;
   clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
 }
 
@@ -850,7 +855,6 @@ LAYOUT
 
 .site__barre {
   width: 100%;
-  position: absolute;
   grid-area: sidebar;
   background-color: transparent;
 }

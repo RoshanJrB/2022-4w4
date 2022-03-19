@@ -2,21 +2,22 @@
     //background-color: rgb(122, 176, 207);
     background-color: rgba($color__background-body,.5);
     font-family: $font__main;
+    width: 100%;
 }
 
 .home::after{
     content : "";
     position : absolute;
-    width : 100%;
+    min-width : 500px;
     height : 100%;
     top:0;
     bottom:0;
     left:0;
     right:0;
     background-color: $color__background-body-clip;
-   
-    //z-index: -1;
+    z-index: -1;
     clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
+
 }
 
 
@@ -24,12 +25,13 @@
 .site__header{
     grid-area: header;  
     background-color: rgba($color__background-header, .5);
+    //position: relative;
 
 }
 
 .site__barre{
     width: 100%;
-    position: absolute;
+    //position: absolute;
     grid-area: sidebar;
     background-color: transparent;
 }
