@@ -55,6 +55,18 @@
     }
 }
 
+@media screen and (min-width: $largeur__media--desktop) {
+    #burger svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu-principal-container{
+        padding: 5% 0 0 0;
+    }
+    
+}
+
 /*@media screen and (min-width : $largeur__media--tablette){
     .site #burger {
         display : none;

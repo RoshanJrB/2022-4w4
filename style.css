@@ -471,9 +471,12 @@ COMPOSANTES
 .formation {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .formation__titre {
+  padding-top: 2%;
+  align-self: center;
   font-size: 2rem;
   color: #dbdff3;
   margin: 10px 0px;
@@ -481,7 +484,9 @@ COMPOSANTES
 }
 
 .formation__liste {
+  padding-top: 2%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -571,6 +576,55 @@ COMPOSANTES
   width: 30%;
 }
 
+@media screen and (min-width: 1100px) {
+  .site__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #6faee2;
+    color: #d6d8e4;
+    padding-left: 10px;
+  }
+  .site__header__titre {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .site__header .custom-logo-link, .site__header .header__titre {
+    padding: 10px;
+  }
+  .site__header .custom-logo {
+    height: 70%;
+    width: 70%;
+  }
+  .site__header .header__titre {
+    font-size: 4vw;
+    font-family: "Oxanium", cursive;
+  }
+  .site__header .header__description {
+    font-size: clamp(5rem, 2vw, 5rem);
+    font-family: "Hubballi", cursive;
+  }
+  .util {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 90%;
+    justify-content: space-between;
+  }
+  .util__lien {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+
 #burger {
   z-index: 50;
   position: absolute;
@@ -622,6 +676,16 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
+}
+
+@media screen and (min-width: 1100px) {
+  #burger svg {
+    width: 60px;
+    height: 60px;
+  }
+  .menu-principal-container {
+    padding: 5% 0 0 0;
+  }
 }
 
 /*@media screen and (min-width : $largeur__media--tablette){
@@ -742,6 +806,40 @@ COMPOSANTES
   align-items: center;
   justify-content: center;
   border: none;
+}
+
+@media screen and (min-width: 1100px) {
+  .recherche {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: 30%;
+    margin: 10px 0 10px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .recherche__input {
+    flex: 1;
+    width: 100%;
+    background-color: rgba(195, 196, 223, 0.1);
+    transition: all .3s;
+    border: none;
+    outline: none;
+  }
+  .recherche__input:focus {
+    background-color: rgba(195, 196, 223, 0.5);
+  }
+  .recherche__bouton {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
 }
 
 /* ---------------------------------------------------------
@@ -945,8 +1043,9 @@ LAYOUT
 
 @media screen and (min-width: 800px) {
   .site {
-    grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
   }
   .home {
     display: grid;

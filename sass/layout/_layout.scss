@@ -60,11 +60,14 @@
 @media screen and (min-width : $largeur__media--tablette)
 {
     .site {
-        grid-template-columns: ($size__site-barre) auto;
+        display: grid;
+        //gap : 10px;
+        grid-template-columns: auto;
         grid-template-areas:
-            "header header"
-            "sidebar main"
-            "footer footer";
+            "sidebar"
+            "header"
+            "main"
+            "footer";
     }
 
     .home {

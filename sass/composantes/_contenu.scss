@@ -9,15 +9,20 @@
 .formation {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     &__titre {
+        padding-top: 2%;
+        align-self: center;
         font-size: 2rem;
         color: $color__font-main;
         margin: 10px 0px;
         font-family: $font__titre;
     }
     &__liste {
+        padding-top: 2%;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
     
