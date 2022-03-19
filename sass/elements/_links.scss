@@ -25,20 +25,13 @@
 }
 
 /* ---------------------------------- */
-@mixin links__menu(	$couleur, 
-				$couleur--visited, 
+@mixin links__menu(	$couleur,  
 				$couleur--hover,
-				$background, 
-				$background--visited, 
+				$background,  
 				$background--hover)
 {
 	color: $couleur;
 	background-color:  $background;
-
-	&:visited {
-		color: $couleur--visited;
-		background-color:  $background--visited;
-	}
 
 	&:hover,
 	&:focus,
@@ -61,8 +54,7 @@
 
 /* -----------------------------------*/
 a {
-	@include links(	$color__link,
-					$color__link-visited, 
+	@include links(	$color__link, 
 					$color__link-hover )
 }
 
@@ -89,11 +81,9 @@ a {
 }
 
 .menu-principal .menu-item a {
-	@include links__menu (	$color__link__menu__principal,
-	$color__link__menu__principal-visited, 
+	@include links__menu (	$color__link__menu__principal, 
 	$color__link__menu__principal-hover,
-	$background__link__menu__principal,
-	$background__link__menu__principal-visited, 
+	$background__link__menu__principal, 
 	$background__link__menu__principal-hover);
 }
 
