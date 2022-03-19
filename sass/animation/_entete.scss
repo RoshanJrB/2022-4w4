@@ -107,6 +107,7 @@
       &__ul{
           animation : anim-entete 1s forwards;
           display : flex;
+          flex-direction: row;
           align-content: center;
           list-style-type: none;
           margin: 0;
@@ -128,6 +129,7 @@
               }
 
             a{
+              text-align: center;
               width: 100%; 
               height: 100%;
               margin: 0 auto;

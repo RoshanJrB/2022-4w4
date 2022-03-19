@@ -842,6 +842,7 @@ ANIMATION
   .animation__nav__ul {
     animation: anim-entete 1s forwards;
     display: flex;
+    flex-direction: row;
     align-content: center;
     list-style-type: none;
     margin: 0;
@@ -862,6 +863,7 @@ ANIMATION
     box-shadow: 5px 10px 8px #888888;
   }
   .animation__nav__ul .menu-item a {
+    text-align: center;
     width: 100%;
     height: 100%;
     margin: 0 auto;
