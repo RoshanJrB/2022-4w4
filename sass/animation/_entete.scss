@@ -1,25 +1,105 @@
-/*.animation{
-    display : flex;
-    flex-direction: column;
-    justify-content: space-around;
+.animation { 
+  &__nav{
+    margin: 0 auto;
+    width:100%;
 
-    &__div__bloc{
-        margin: 1%;
+    &__ul{
+        animation : anim-entete-mobile 1s forwards;
         display : flex;
+        flex-direction: column;
+        align-content: center;
         justify-content: center;
-        align-items: center;
-        width : 99%;
-        height : 100px;
-        background-color: rgb(17, 97, 247);
-        color : #fff;
-        font-size: 200%;
-        animation : anim-entete 1s forwards;
-    }
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
 
-}*/
+        .menu-item {
+            background-color: rgb(17, 97, 247);
+            //width: 100%;
+            height: 100px;
+            margin: 1%;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            transition: 500ms;
+            
+            &:hover {
+              transition: 500ms;
+              box-shadow: 5px 10px 8px #888888;
+            }
+
+          a{
+            width: 100%; 
+            height: 100%;
+            margin: 0 auto;
+            color: $color__font-header;
+            font-size: 200%;
+            display : flex;
+            align-items: center;
+            justify-content: center;
+            //padding : 3px;
+          }
+        }    
+     }
+  }
+}
 
 
 @media screen and (min-width: $largeur__media--tablette) {
+  .animation { 
+    &__nav{
+      margin: 0 auto;
+      width:100%;
+  
+      &__ul{
+          animation : anim-entete-mobile 1s forwards;
+          display : flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          justify-content: space-around;
+  
+          .menu-item {
+              background-color: rgb(17, 97, 247);
+              //width: 100%;
+              height: 100px;
+              margin: 1%;
+              padding: 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-content: center;
+              transition: 500ms;
+              
+              &:hover {
+                transition: 500ms;
+                box-shadow: 5px 10px 8px #888888;
+              }
+  
+            a{
+              width: 100%; 
+              height: 100%;
+              margin: 0 auto;
+              color: $color__font-header;
+              font-size: 200%;
+              display : flex;
+              align-items: center;
+              justify-content: center;
+              //padding : 3px;
+            }
+          }    
+       }
+    }
+  }
+}
+
+@media screen and (min-width: $largeur__media--desktop) {
   .animation { 
     &__nav{
       width:100%;
@@ -63,22 +143,6 @@
     }
   }
 }
-
-@media screen and (min-width: $largeur__media--desktop) {
-    .animation{
-        flex-direction: row;
-
-        &__div__bloc{
-            text-align: center;
-            display : flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 175%;
-            width : 20%;
-            height : 100px;
-        }
-    }
-}
     
 
 @keyframes anim-entete {
@@ -88,4 +152,13 @@
     100% {
         transform : translateY(0);  
     }
+}
+
+@keyframes anim-entete-mobile {
+  0% {
+    transform : translateX(-100vw);  
+  }
+  100% {
+      transform : translateX(0);  
+  }
 }

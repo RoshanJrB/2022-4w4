@@ -17,6 +17,7 @@
     transform: translateY(-100%);
 }
 .menu-principal-container {
+    z-index: 49;
     background-color: $color__background-barre;
     transform: translateY(-100%);
     transition: 500ms;
@@ -26,6 +27,7 @@
     position: absolute;
 }
 #chk-burger:checked ~ .menu-principal-container, .site__barre{
+    z-index: 49;
     //display : block;
     transform: translateY(0%);
     transition: 500ms;
@@ -53,7 +55,7 @@
     }
 }
 
-@media screen and (min-width : $largeur__media--tablette){
+/*@media screen and (min-width : $largeur__media--tablette){
     .site #burger {
         display : none;
     }
@@ -68,7 +70,7 @@
         display : none;
     }
 
-}
+}*/
 
 
 
