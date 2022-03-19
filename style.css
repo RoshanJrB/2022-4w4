@@ -731,6 +731,12 @@ COMPOSANTES
   text-align: center;
 }
 
+.site__footer__ligne .footer__recherche {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
 .footer__menu__nav__ul {
   display: flex;
   list-style-type: none;

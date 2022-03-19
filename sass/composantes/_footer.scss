@@ -29,7 +29,11 @@
       }
       .footer__auteur {}
       .footer__description {}
-      .footer__recherche {}
+      .footer__recherche {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+      }
       .footer__copyright {}
 
     }
