@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: groupe__3 eddy martin
-Author: Eddy martin
-Author URI: https://github.com/eddytuto
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+theme name: lab5 Roshan Jr Bussun
+Author: Roshan Jr Bussun
+Author URI: https://github.com/RoshanJrB/2022-4w4
+Description: Ce thème servira comme remise du TP1 dans l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/RoshanJrB/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -353,15 +353,16 @@ html {
 /* ---------------------------------- */
 /* -----------------------------------*/
 a {
-  color: #7b5647;
+  text-decoration: none;
+  color: white;
 }
 
 a:visited {
-  color: #5c4033;
+  color: #9c9c9c;
 }
 
 a:hover, a:focus, a:active {
-  color: white;
+  color: #9c9c9c;
 }
 
 a:focus {
@@ -373,6 +374,7 @@ a:hover, a:active {
 }
 
 .site__footer a {
+  text-decoration: none;
   color: #f40b0b;
 }
 
@@ -393,7 +395,8 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #f06a6a;
+  text-decoration: none;
+  color: #fcfcfc;
 }
 
 .header__titre a:visited {
@@ -458,6 +461,14 @@ a:hover, a:active {
   outline: 0;
 }
 
+.util__lien a svg {
+  color: #fcfcfc;
+}
+
+.util__lien a svg:hover, .util__lien a svg:focus, .util__lien a svg:active {
+  color: #8be58f;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -492,6 +503,107 @@ COMPOSANTES
 
 .formation__cours {
   background-color: #d1e9ff;
+  box-shadow: #394044 1px -1px 10px;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .formation__cours {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .formation__cours {
+    width: 30%;
+  }
+}
+
+.cours__titre {
+  font-size: 1.5rem;
+  color: #dbdff3;
+  margin: 5px 0px;
+}
+
+.cours__sigle {
+  font-size: 1.2rem;
+  color: #8a5353;
+  margin: 0;
+}
+
+.cours__description {
+  font-size: 1rem;
+}
+
+.site__main {
+  padding: 10px 15px;
+  background-color: #d5e6f1;
+  border-radius: 5px;
+  box-shadow: #39443e 1px -1px 10px;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
+}
+
+.formation__titre {
+  font-size: 2rem;
+  color: #dbdff3;
+  margin: 10px 0px;
+  font-family: "Oxanium", cursive;
+}
+
+.formation__liste {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+  background-size: 50px 50px;
+  background-position: top right;
+}
+
+.formation__liste .jeu {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=light-shaderlab");
+  background-size: 50px 50px;
+  background-position: top right;
+}
+
+.formation__liste .design {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=photoshop");
+  background-size: 50px 50px;
+  background-position: top right;
+}
+
+.formation__liste .creation-3d {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=maya");
+  background-size: 50px 50px;
+  background-position: top right;
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=excel");
+  background-size: 50px 50px;
+  background-position: top right;
+}
+
+.formation__liste .video {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=video");
+  background-size: 50px 50px;
+  background-position: top right;
+}
+
+.formation__cours {
+  background-color: #d1e9ff;
+  background-position: 97% 3%;
+  background-repeat: no-repeat;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -704,6 +816,31 @@ COMPOSANTES
     }
 
 }*/
+/* -------------------------------------------------
+Navigation catégorie cours
+---------------------------------------------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 10px;
+  background-color: #6a6ad5;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #a6a6fe;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #3e3ed8;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: #c2c2e0;
+}
+
 .site__footer {
   font-family: "Oxanium", cursive;
   background-color: #56699f;
