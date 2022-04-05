@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header() // le header du site?>
 <main class="site__main">
     <section class="formation">
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>

@@ -11,6 +11,53 @@
     flex-direction: column;
     justify-content: space-between;
 
+    .menu-footer-container{
+        margin: 0 auto;
+        width:100%;
+        
+        ul{
+            animation : anim-entete-mobile 1s forwards;
+            display : flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+            
+            .menu-item {
+                background-color: rgb(69, 97, 148);
+                width: calc(100%/7);
+                height: 100px;
+                margin: 1%;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                transition: 500ms;
+                
+                &:hover {
+                    transition: 500ms;
+                    box-shadow: 5px 10px 8px #888888;
+                }
+                
+                a{
+                    width: 100%; 
+                    height: 100%;
+                    margin: 0 auto;
+                    color: $color__font-header;
+                    font-size: 200%;
+                    display : flex;
+                    align-items: center;
+                    justify-content: center;
+                    //padding : 3px;
+                }
+                }    
+             }
+          }
+
     &__titre {
         padding-top: 2%;
         align-self: center;
