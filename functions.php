@@ -136,19 +136,23 @@ function my_register_sidebars() {
  */
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
-    if(!is_admin() && is_main_query() && is_category(array('cours', 'web', 'jeu', 'utilitaire', 'design', 'creation-3d', 'video')) ){
+    if(is_admin() || !is_main_query() || !is_category(array('cours', 'web', 'jeu', 'utilitaire', 'design', 'creation-3d', 'video')) )
+        {
+            return $query;
+        }
+        else
+        {
+            $ordre = get_query_var('ordre');
+            //echo ("------------- ordre=". $ordre . "  -------------------------");
+            $cle = get_query_var('cletri');
+            //echo ("------------- cle=". $cle . "  -------------------------");
+
+            $query->set('order',  $ordre);
+            $query->set('orderby', $cle);
+            $query->set('postperpage', '-1');
+        }
         //var_dump($query);
         //die();
-
-        $ordre = get_query_var('ordre');
-        //echo ("------------- ordre=". $ordre . "  -------------------------");
-        $cle = get_query_var('cletri');
-        //echo ("------------- cle=". $cle . "  -------------------------");
-
-        $query->set('order',  $ordre);
-        $query->set('orderby', $cle);
-        $query->set('postperpage', '-1');
-    }
     
 
   /*if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 

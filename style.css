@@ -479,6 +479,32 @@ COMPOSANTES
   box-shadow: #39443e 1px -1px 10px;
 }
 
+.filtre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.filtre a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 200%;
+  height: 50px;
+  width: 10%;
+  margin: 0 1% 0 1%;
+  background-color: #456194;
+  color: white;
+  transition: 500ms;
+}
+
+.filtre a:hover {
+  transition: 500ms;
+  box-shadow: 5px 10px 8px #888888;
+}
+
 .formation {
   display: flex;
   flex-direction: column;
@@ -529,6 +555,14 @@ COMPOSANTES
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.formation .menu-footer-container ul .current-menu-item {
+  background-color: #364b72;
+}
+
+.formation .menu-footer-container ul .current-menu-item a {
+  color: #e4e743;
 }
 
 .formation__titre {
