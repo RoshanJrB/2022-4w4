@@ -1,6 +1,6 @@
 # 4w4 - Conception d'interface et développement Web
 ### Auteur : Bussun Roshan Jr
-### TP1 en 4W4
+### Exercice 3 en 4W4
 
 Développement des modules:
  - responsive affichage tablette mobile et desktop
