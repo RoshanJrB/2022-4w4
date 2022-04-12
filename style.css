@@ -1046,6 +1046,42 @@ Navigation catégorie cours
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
+.menu-item-icone {
+  margin-top: 50%;
+  display: flex;
+  border: 1px solid grey;
+  height: 4rem;
+  width: 4rem;
+}
+
+.accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+}
+
+.accueil__web .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=globe-alt");
+}
+
+.accueil__utilitaire .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=light-bulb");
+}
+
+.accueil__jeu .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=code");
+}
+
+.accueil__video .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=film");
+}
+
+.accueil__creation .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=cube");
+}
+
+.accueil__design .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=template");
+}
+
 .animation__nav {
   margin: 0 auto;
   width: 100%;
@@ -1065,7 +1101,7 @@ ANIMATION
 
 .animation__nav__ul .menu-item {
   background-color: #456194;
-  height: 100px;
+  height: 400px;
   margin: 1%;
   padding: 0;
   display: flex;
@@ -1134,6 +1170,7 @@ ANIMATION
     color: #d6d8e4;
     font-size: 200%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -1156,7 +1193,7 @@ ANIMATION
   .animation__nav__ul .menu-item {
     background-color: #456194;
     width: 20%;
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
