@@ -1087,8 +1087,13 @@ ANIMATION
   color: #d6d8e4;
   font-size: 200%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.animation__nav__ul .menu-item a span {
+  font-size: 60%;
 }
 
 @media screen and (min-width: 800px) {
