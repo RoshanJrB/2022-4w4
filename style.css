@@ -721,6 +721,22 @@ COMPOSANTES
   font-size: 1rem;
 }
 
+.modal {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 10px solid grey;
+  background-color: #6666db;
+  top: 25%;
+  left: 25%;
+  transform: scale(0.1);
+  transition: 1s ease-in-out;
+}
+
+.modal:hover {
+  transform: scale(1);
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -1083,7 +1099,6 @@ ANIMATION
 .menu-item-icone {
   margin-top: 50%;
   display: flex;
-  border: 1px solid grey;
   height: 4rem;
   width: 4rem;
 }

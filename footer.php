@@ -40,6 +40,10 @@
     </div>
 </footer>
 
+<div class="modal">
+    Ceci est un test vérifiant le fonctionnement d'une boite modale
+</div>
+
 </body>
 <?php wp_footer(); ?>
 </html>

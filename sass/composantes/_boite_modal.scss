@@ -1,0 +1,16 @@
+.modal
+{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border: 10px solid grey;
+    background-color: rgb(102, 102, 219);
+    top: 25%;
+    left: 25%;
+    transform: scale(.1);
+    transition: 1s ease-in-out;
+    &:hover
+    {
+        transform: scale(1);
+    }
+}

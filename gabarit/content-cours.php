@@ -9,7 +9,8 @@
                         $titreFiltreCours = substr($titre, 7, -6);
                         $nbHeures = substr($titre, -6);
                         $sigleCours = substr($titre, 0, 7);
-                        $descCours = get_the_excerpt();
+                        $descCours =  wp_trim_words(get_the_content(), 15, 
+                        '<button class="cours__desc__suite">voir la suite...</button>');
                         ?>
     <?php the_post_thumbnail("thumbnail") ?>
     <h3 class="cours__titre">
