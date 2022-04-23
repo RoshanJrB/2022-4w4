@@ -1,0 +1,60 @@
+/* Le parent de la boite__modale est la balise «body»  */
+.boite__modale {
+    position : fixed;
+    width : 50%;
+    height : 50%;
+    top:25%;
+    left:25%;
+    border: 5px solid #aaa;
+    background-color: rgb(80, 80, 146);
+    transform : scale(0);
+    transition : all 1s ease-in-out;
+
+    
+}
+.ouvrir 
+{
+    transform : scale(1)
+}
+
+.cours__desc__suite
+{
+    height: 2rem;
+    width: 7rem;
+    margin: 0 0 0 2%;
+    border:  1px solid white;
+    border-radius: 5%;
+    background-color: rgb(80, 80, 146);
+    color: white;
+    transition: 500ms;
+    
+
+    &:hover
+    {
+        
+        background-color: white;
+        color: black;
+        border:  1px solid black;
+    }
+
+}
+.boite__modale__text
+{
+    z-index: -99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 150%;
+    color: white;
+    text-align:center;
+}
+.boite__modale__fermeture
+{
+    z-index: 99;
+}

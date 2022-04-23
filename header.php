@@ -15,7 +15,7 @@
 </head>
 <body  <?php body_class("site"); ?>>
 
-<header class="site__header">
+<header class="site__header" style="background-color:<?= get_theme_mod("header_background"); ?>;">
 <section class="site__header__titre">
 <?php the_custom_logo();  ?>
     <h1 class="header__titre">

@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: 4W4 Exercice 3 Roshan Jr Bussun
+theme name: 4W4 Lab 6 Roshan Jr Bussun
 Author: Roshan Jr Bussun
 Author URI: https://github.com/RoshanJrB/2022-4w4
-Description: Ce thème servira comme remise de l'exercice 3 dans l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/RoshanJrB/2022-4w4
+Description: Ce thème servira comme remise de laboratoire 6 dans l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/RoshanJrB/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -1093,6 +1093,60 @@ Navigation catégorie cours
   }
 }
 
+/* Le parent de la boite__modale est la balise «body»  */
+.boite__modale {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  border: 5px solid #aaa;
+  background-color: #505092;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+.ouvrir {
+  transform: scale(1);
+}
+
+.cours__desc__suite {
+  height: 2rem;
+  width: 7rem;
+  margin: 0 0 0 2%;
+  border: 1px solid white;
+  border-radius: 5%;
+  background-color: #505092;
+  color: white;
+  transition: 500ms;
+}
+
+.cours__desc__suite:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.boite__modale__text {
+  z-index: -99;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 150%;
+  color: white;
+  text-align: center;
+}
+
+.boite__modale__fermeture {
+  z-index: 99;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1158,6 +1212,7 @@ ANIMATION
   justify-content: center;
   align-content: center;
   transition: 500ms;
+  border-radius: 5%;
 }
 
 .animation__nav__ul .menu-item:hover {
