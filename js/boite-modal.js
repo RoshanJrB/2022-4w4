@@ -13,7 +13,7 @@
 (function() {
     //console.log("vive la boite modale");
     let boite__modale = document.querySelector(".boite__modale");
-    let cours__desc__ouvrir = document.querySelectorAll('.cours__desc__suite');
+    let cours__desc__ouvrir = document.querySelectorAll(".cours__desc__suite");
     let boite__modale__text = document.querySelector(".boite__modale__text");
     //console.log(coursdescouvrir.length);
 

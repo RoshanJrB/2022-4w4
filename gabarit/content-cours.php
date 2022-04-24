@@ -3,7 +3,7 @@
     //var_dump($categories);
     //echo $categories[1]->slug;
 ?>
-<article class="formation__cours <?php echo $categories[1]->slug; ?>">
+<article class="formation__cours <?=$categories[1]-> slug; ?>">
     <?php
                         $titre = get_the_title();
                         $titreFiltreCours = substr($titre, 7, -6);
