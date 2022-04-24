@@ -1111,17 +1111,28 @@ Navigation catégorie cours
 }
 
 .cours__desc__suite {
+  outline: none;
   height: 2rem;
   width: 7rem;
   margin: 0 0 0 2%;
   border: 1px solid white;
-  border-radius: 5%;
+  border-radius: 5px;
   background-color: #505092;
   color: white;
   transition: 500ms;
 }
 
+.cours__desc__suite:active {
+  border: none;
+  outline: none;
+}
+
+.cours__desc__suite:focus {
+  outline: none;
+}
+
 .cours__desc__suite:hover {
+  outline: none;
   background-color: white;
   color: black;
   border: 1px solid black;
@@ -1144,7 +1155,19 @@ Navigation catégorie cours
 }
 
 .boite__modale__fermeture {
+  height: 5rem;
+  width: 5rem;
+  font-size: 4rem;
+  line-height: normal;
+  color: white;
+  background-color: #505092;
+  border: #505092;
   z-index: 99;
+  transition: 1s;
+}
+
+.boite__modale__fermeture:hover {
+  border: 1px solid black;
 }
 
 /* ---------------------------------------------------------
