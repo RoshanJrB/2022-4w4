@@ -11,7 +11,7 @@
                         $nbHeures = substr($titre, -6);
                         $sigleCours = substr($titre, 0, 7);
                         $descComplet = get_the_content();
-                        $radioBouton = "582 – TIM - Technique d’intégration multimédia";
+                        $radioBouton = get_field("departement");
                         $descCours =  wp_trim_words(get_the_content(), 15, 
                         '<button class="cours__desc__suite">voir la suite...</button>');
                         ?>
