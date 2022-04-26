@@ -10,12 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <?php wp_head() ?>
+    <?php wp_head(); ?>
     <?php show_admin_bar(true); ?>
 </head>
 <body  <?php body_class("site"); ?>>
 
-<header class="site__header" style="background-color:<?= get_theme_mod("header_background"); ?>;">
+<header class="site__header" style="background-color:<?= get_theme_mod('couleur_background_body'); ?>;">
 <section class="site__header__titre">
 <?php the_custom_logo();  ?>
     <h1 class="header__titre">
