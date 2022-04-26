@@ -140,7 +140,9 @@ function my_register_sidebars() {
  */
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
-    if(is_admin() || !is_main_query() || !is_category(array('cours', 'web', 'jeu', 'utilitaire', 'design', 'creation-3d', 'video')) )
+    if(is_admin() 
+                || !is_main_query() 
+                || !is_category(array('cours', 'web', 'jeu', 'utilitaire', 'design', 'creation-3d', 'video')) )
         {
             return $query;
         }

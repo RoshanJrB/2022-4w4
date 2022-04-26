@@ -1,6 +1,15 @@
 /* -------------------------------------------------
 Navigation catégorie cours
 ---------------------------------------------------- */
+hr{
+    display: none;
+}
+
+.menu-item-description{
+    border-top: 2px solid white;
+    width: 90%;
+    padding: 10% 0 0 0;
+}
 .menu-categorie_cours-container {  // nav
     .menu {   // ul
             display : flex;
@@ -11,6 +20,7 @@ Navigation catégorie cours
                 background-color: $color__bouton__background;
                 a{
                     color: $color__bouton__color;
+                    
 
                 }
             &:hover {
