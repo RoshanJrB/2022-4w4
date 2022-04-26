@@ -1,4 +1,4 @@
-<footer class="site__footer">
+<footer class="site__footer" style="background-color:<?= get_theme_mod('couleur_background_footer'); ?>">
     <div class="site__footer__colonne">
         <section class="footer__article">
         <?php get_sidebar("footer_colonne_1");  ?>

@@ -1,5 +1,6 @@
 <?php 
 
+require_once('options/apparence.php');
 /* --------------------------------------------------------------------  add_theme_support() */
 function cidw_4w4_add_theme_support(){
 add_theme_support( 'post-thumbnails' );
@@ -18,13 +19,10 @@ function cidw_4w4_enqueue(){
 
     wp_enqueue_style('cidw-4w4-google-font',"https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500&family=Roboto&display=swap", false);
     wp_enqueue_script( 'cidw-4w4-boite-modal', 
-                        get_template_directory_uri() . '/js/boite-modal.js', 
-                        array(), 
-                        filemtime(get_template_directory() . '/js/boite-modal.js'), 
-                        true);
-                        
-    
-
+                            get_template_directory_uri() . '/js/boite_modal.js', 
+                            array(), 
+                            filemtime(get_template_directory() . '/js/boite_modal.js'),
+                            true);
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
