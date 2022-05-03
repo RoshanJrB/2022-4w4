@@ -43,7 +43,6 @@
 <div class="boite__modale">
     <button class="boite__modale__fermeture">X</button>
     <p class="boite__modale__text">
-        Ceci est un test vérifiant le fonctionnement d'une boite modale
     </p>
 </div>
 

@@ -31,7 +31,8 @@ INITIALISATION
 COMPOSANTES
 --------------------------------------------------------- */
 @import "composantes/contenu";
-// @import "composantes/boite_modal";
+@import "composantes/galerie";
+@import "composantes/accueil";
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/navigation_categorie_cours";
@@ -43,6 +44,7 @@ COMPOSANTES
 ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
+@import "animation/burger";
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
