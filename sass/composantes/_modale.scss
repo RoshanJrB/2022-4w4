@@ -3,13 +3,8 @@
 {
     display: block;
 }
-.boite__modale {
+.boite__modale, .boite__carrousel {
     position : fixed;
-    width : 50%;
-    min-height : 50%;
-    height:auto;
-    top:25%;
-    left:25%;
     border: 5px solid #aaa;
     background-color: rgb(80, 80, 146);
     transform : scale(0);
@@ -17,6 +12,42 @@
 
     
 }
+.boite__modale
+{
+    width : 50%;
+    min-height : 50%;
+    height:auto;
+    top:25%;
+    left:25%;
+}
+.boite__carrousel 
+{
+    width : 75%;
+    height: 75%;
+    top:12.5%;
+    left:12.5%;
+    
+    &__navigation
+    {
+        position: absolute;
+        bottom: 1%;
+        left: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+    }
+
+    &__fermeture
+    {
+        z-index: 99;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+    }
+}
+
 .ouvrir 
 {
     transform : scale(1)
@@ -70,6 +101,7 @@
     color: white;
     text-align:center;
 }
+
 .boite__modale__fermeture
 {
     margin: 1%;

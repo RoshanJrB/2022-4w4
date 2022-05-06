@@ -46,6 +46,12 @@
     </p>
 </div>
 
+<div class="boite__carrousel">
+    <button class="boite__carrousel__fermeture">X</button>
+    <p class="boite__carrousel__navigation">
+    </p>
+</div>
+
 </body>
 <?php wp_footer(); ?>
 </html>

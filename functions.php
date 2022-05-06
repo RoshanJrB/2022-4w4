@@ -24,10 +24,10 @@ function cidw_4w4_enqueue(){
                             filemtime(get_template_directory() . '/js/boite-modal.js'),
                             true);
     wp_enqueue_style('cidw-4w4-google-font',"https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500&family=Roboto&display=swap", false);
-    wp_enqueue_script( 'cidw-4w4-carousel', 
-                            get_template_directory_uri() . '/js/carousel.js', 
+    wp_enqueue_script( 'cidw-4w4-carrousel', 
+                            get_template_directory_uri() . '/js/carrousel.js', 
                             array(), 
-                            filemtime(get_template_directory() . '/js/carousel.js'),
+                            filemtime(get_template_directory() . '/js/carrousel.js'),
                             true);
 }
 
