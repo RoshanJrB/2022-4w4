@@ -13,18 +13,19 @@
 
     h1
     {
+        color: #5b6c8c;
         font-family: $font__titre;
         font-size: 4rem;
     }
-    h3
+    .evenement__h3
         {
             font-family: $font__titre;
-            color: rgb(188, 182, 237);
+            color: rgb(161, 200, 242);
             text-align: center;
             font-size: 3rem;
         }
 
-    p
+    .evenement__p
     {
         font-family: $font__main;
         color: white;
@@ -37,7 +38,7 @@
         width: 20%;
         border: 1px solid rgb(32, 32, 136);
         border-radius: 20px;
-        background-color: rgb(75, 75, 217);
+        background-color: #456194;
     }
 
     .heure
@@ -46,14 +47,14 @@
         width: 20%;
         border: 1px solid rgb(32, 32, 136);
         border-radius: 20px;
-        background-color: rgb(75, 75, 217);
+        background-color: #456194;
     }
     .date
     {
         width: 20%;
         border: 1px solid rgb(32, 32, 136);
         border-radius: 20px;
-        background-color: rgb(75, 75, 217);        
+        background-color: #456194;        
     }
 
     .endroit
@@ -62,6 +63,6 @@
         width: 20%;
         border: 1px solid rgb(32, 32, 136);
         border-radius: 20px;
-        background-color: rgb(75, 75, 217);
+        background-color: #456194;
     }
 }

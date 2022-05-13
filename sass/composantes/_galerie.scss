@@ -1,3 +1,14 @@
+.wp-block-image
+{
+    transition: 200ms ease-in-out;
+}
+.wp-block-image:hover
+{
+    box-shadow: 5px 10px 8px #888888;
+    transform: scale(1.05);
+}
+
+
 .boite__carrousel__navigation
 {
     display: flex;

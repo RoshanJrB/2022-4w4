@@ -721,6 +721,15 @@ COMPOSANTES
   font-size: 1rem;
 }
 
+.wp-block-image {
+  transition: 200ms ease-in-out;
+}
+
+.wp-block-image:hover {
+  box-shadow: 5px 10px 8px #888888;
+  transform: scale(1.05);
+}
+
 .boite__carrousel__navigation {
   display: flex;
   flex-direction: row;
@@ -1127,16 +1136,16 @@ hr {
 }
 
 /* Le parent de la boite__modale est la balise «body»  */
-.cours__dep {
-  display: block;
-}
-
 .boite__modale, .boite__carrousel {
   position: fixed;
   border: 5px solid #aaa;
   background-color: #505092;
   transform: scale(0);
   transition: 1s ease-in-out;
+}
+
+.cours__dep {
+  display: block;
 }
 
 .boite__modale {
@@ -1259,18 +1268,19 @@ hr {
 }
 
 .site__main h1 {
+  color: #5b6c8c;
   font-family: "Oxanium", cursive;
   font-size: 4rem;
 }
 
-.site__main h3 {
+.site__main .evenement__h3 {
   font-family: "Oxanium", cursive;
-  color: #bcb6ed;
+  color: #a1c8f2;
   text-align: center;
   font-size: 3rem;
 }
 
-.site__main p {
+.site__main .evenement__p {
   font-family: "Hubballi", cursive;
   color: white;
   text-align: center;
@@ -1282,7 +1292,7 @@ hr {
   width: 20%;
   border: 1px solid #202088;
   border-radius: 20px;
-  background-color: #4b4bd9;
+  background-color: #456194;
 }
 
 .site__main .heure {
@@ -1290,14 +1300,14 @@ hr {
   width: 20%;
   border: 1px solid #202088;
   border-radius: 20px;
-  background-color: #4b4bd9;
+  background-color: #456194;
 }
 
 .site__main .date {
   width: 20%;
   border: 1px solid #202088;
   border-radius: 20px;
-  background-color: #4b4bd9;
+  background-color: #456194;
 }
 
 .site__main .endroit {
@@ -1305,7 +1315,7 @@ hr {
   width: 20%;
   border: 1px solid #202088;
   border-radius: 20px;
-  background-color: #4b4bd9;
+  background-color: #456194;
 }
 
 /* ---------------------------------------------------------
@@ -1371,12 +1381,12 @@ ANIMATION
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  transition: 500ms;
+  transition: all 500ms ease-in-out linear;
   border-radius: 5%;
 }
 
 .animation__nav__ul .menu-item:hover {
-  transition: 500ms;
+  background-image: linear-gradient(#456194 70%, white 30%);
   box-shadow: 5px 10px 8px #888888;
 }
 
@@ -1421,10 +1431,10 @@ ANIMATION
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    transition: 500ms;
+    transition: all 500ms ease-in-out linear;
   }
   .animation__nav__ul .menu-item:hover {
-    transition: 500ms;
+    background-image: linear-gradient(#456194 70%, white 30%);
     box-shadow: 5px 10px 8px #888888;
   }
   .animation__nav__ul .menu-item a {
@@ -1461,10 +1471,10 @@ ANIMATION
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transition: 500ms;
+    transition: all 500ms ease-in-out linear;
   }
   .animation__nav__ul .menu-item:hover {
-    transition: 500ms;
+    background-image: linear-gradient(#456194 70%, white 30%);
     box-shadow: 5px 10px 8px #888888;
   }
   .animation__nav__ul .menu-item a {
@@ -1519,7 +1529,7 @@ ANIMATION
   height: 100%;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #2a4d8c;
   transition: 0.5s;
 }
 
@@ -1562,7 +1572,7 @@ LAYOUT
   content: "";
   position: absolute;
   min-width: 500px;
-  height: 100%;
+  height: 145%;
   top: 0;
   bottom: 0;
   left: 0;

@@ -1,8 +1,4 @@
 /* Le parent de la boite__modale est la balise «body»  */
-.cours__dep
-{
-    display: block;
-}
 .boite__modale, .boite__carrousel {
     position : fixed;
     border: 5px solid #aaa;
@@ -11,6 +7,10 @@
     transition : 1s ease-in-out;
 
     
+}
+.cours__dep
+{
+    display: block;
 }
 .boite__modale
 {
