@@ -1136,7 +1136,7 @@ hr {
   border: 5px solid #aaa;
   background-color: #505092;
   transform: scale(0);
-  transition: all 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .boite__modale {
