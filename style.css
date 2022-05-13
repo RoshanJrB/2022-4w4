@@ -1246,6 +1246,68 @@ hr {
   border-radius: 20px;
 }
 
+.site__main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.site__main .container__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 2% 0;
+}
+
+.site__main h1 {
+  font-family: "Oxanium", cursive;
+  font-size: 4rem;
+}
+
+.site__main h3 {
+  font-family: "Oxanium", cursive;
+  color: #bcb6ed;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.site__main p {
+  font-family: "Hubballi", cursive;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.site__main .organisateur {
+  margin-left: 2%;
+  width: 20%;
+  border: 1px solid #202088;
+  border-radius: 20px;
+  background-color: #4b4bd9;
+}
+
+.site__main .heure {
+  margin-left: 2%;
+  width: 20%;
+  border: 1px solid #202088;
+  border-radius: 20px;
+  background-color: #4b4bd9;
+}
+
+.site__main .date {
+  width: 20%;
+  border: 1px solid #202088;
+  border-radius: 20px;
+  background-color: #4b4bd9;
+}
+
+.site__main .endroit {
+  margin-left: 2%;
+  width: 20%;
+  border: 1px solid #202088;
+  border-radius: 20px;
+  background-color: #4b4bd9;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
