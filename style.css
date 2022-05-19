@@ -1327,6 +1327,15 @@ hr {
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
+.site__main__atelier {
+  display: flex;
+  flex-direction: column;
+}
+
+.site__main__atelier h1 {
+  font-size: 4rem;
+}
+
 .menu-item-icone {
   background-repeat: no-repeat;
   height: 100%;
@@ -1526,6 +1535,28 @@ ANIMATION
   100% {
     transform: translateX(0);
   }
+}
+
+.titre__nav__atelier {
+  text-align: center;
+  font-family: "Oxanium", cursive;
+  font-size: 4rem;
+}
+
+.atelier__html .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.atelier__git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
+.atelier__react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.atelier__css .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
 }
 
 @media screen and (min-width: 800px) {
