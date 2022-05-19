@@ -1,12 +1,4 @@
-.site__main__atelier
-{
-  h1
-  {
-    font-size: 4rem;
-  }
-  display: flex;
-  flex-direction: column;
-}
+
 .menu-item-icone{
   background-repeat: no-repeat;
   height: 100%;
@@ -135,6 +127,7 @@
               transition: all 500ms ease-in-out linear;
               
               &:hover {
+                //animation: anim-hover 1s alternate;
                 background-image: linear-gradient(rgb(69, 97, 148) 70%, white 30%);
                 box-shadow: 5px 10px 8px #888888;
               }
@@ -181,10 +174,12 @@
               display: flex;
               flex-direction: row;
               justify-content: center;
-              transition: all 500ms ease-in-out linear;
-              
+              transition: all 500ms ease-in-out ;
+
               &:hover {
                 background-image: linear-gradient(rgb(69, 97, 148) 70%, white 30%);
+                //transition: background-image 1s ease-in-out;
+                animation:  anim-hover 1s forwards;
                 box-shadow: 5px 10px 8px #888888;
               }
 
@@ -215,37 +210,4 @@
     100% {
         transform : translateY(0);  
     }
-}
-
-@keyframes anim-entete-mobile {
-  0% {
-    transform : translateX(-100vw);  
-  }
-  100% {
-      transform : translateX(0);  
-  }
-}
-
-.titre__nav__atelier
-{
-  text-align: center;
-  font-family: $font__titre;
-  font-size: 4rem;
-}
-
-.atelier__html .menu-item-icone{
-  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
-  
-}
-.atelier__git .menu-item-icone{
-  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
-  
-}
-.atelier__react .menu-item-icone{
-  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
-  
-}
-.atelier__css .menu-item-icone{
-  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
-  
 }

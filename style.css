@@ -1327,15 +1327,6 @@ hr {
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
-.site__main__atelier {
-  display: flex;
-  flex-direction: column;
-}
-
-.site__main__atelier h1 {
-  font-size: 4rem;
-}
-
 .menu-item-icone {
   background-repeat: no-repeat;
   height: 100%;
@@ -1499,10 +1490,11 @@ ANIMATION
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transition: all 500ms ease-in-out linear;
+    transition: all 500ms ease-in-out;
   }
   .animation__nav__ul .menu-item:hover {
     background-image: linear-gradient(#456194 70%, white 30%);
+    animation: anim-hover 1s forwards;
     box-shadow: 5px 10px 8px #888888;
   }
   .animation__nav__ul .menu-item a {
@@ -1526,37 +1518,6 @@ ANIMATION
   100% {
     transform: translateY(0);
   }
-}
-
-@keyframes anim-entete-mobile {
-  0% {
-    transform: translateX(-100vw);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.titre__nav__atelier {
-  text-align: center;
-  font-family: "Oxanium", cursive;
-  font-size: 4rem;
-}
-
-.atelier__html .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
-}
-
-.atelier__git .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
-}
-
-.atelier__react .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
-}
-
-.atelier__css .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
 }
 
 @media screen and (min-width: 800px) {
@@ -1615,6 +1576,37 @@ ANIMATION
 #chk-burger:checked ~ #burger .burger__ligne:nth-child(3) {
   background-color: white;
   clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
+.site__main__atelier {
+  display: flex;
+  flex-direction: column;
+}
+
+.site__main__atelier h1 {
+  font-size: 4rem;
+}
+
+.titre__nav__atelier {
+  text-align: center;
+  font-family: "Oxanium", cursive;
+  font-size: 4rem;
+}
+
+.atelier__html .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.atelier__git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
+.atelier__react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.atelier__css .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
 }
 
 /* ---------------------------------------------------------
